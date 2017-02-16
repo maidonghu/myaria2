@@ -25,3 +25,5 @@ aria2c --conf-path=/usr/local/etc/aria2.conf
 #make clean
 #make distclean
 #cd ..
+
+apt install megatools -y
