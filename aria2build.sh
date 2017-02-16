@@ -3,6 +3,12 @@ echo -e '\r' | add-apt-repository ppa:jonathonf/ffmpeg-3
 apt update && apt install ffmpeg aria2 -y
 wget https://github.com/maidonghu/myaria2/blob/master/aria2_1.31.0-1_amd64.deb
 dpkg -i aria2_1.31.0-1_amd64.deb
+cd /mnt/volume-nyc1-01
+mkdir -p Downloads
+cd Downloads
+touch aria2.log
+touch aria2.session
+cd ~
 wget https://raw.githubusercontent.com/maidonghu/myaria2/master/aria2.conf
 mv aria2.conf /usr/local/etc/aria2.conf
 aria2c --conf-path=/usr/local/etc/aria2.conf
