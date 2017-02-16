@@ -27,3 +27,10 @@ aria2c --conf-path=/usr/local/etc/aria2.conf
 #cd ..
 
 apt install megatools -y
+
+echo -e "\r" | wget https://docs.google.com/uc?id=0B3X9GlR6EmbnQ0FtZmJJUXEyRTA&export=download
+mv uc* gdrive
+chmod +x gdrive
+wget https://raw.githubusercontent.com/maidonghu/myaria2/master/token_v2.json
+mkdir .gdrive
+mv token_v2.json .gdrive/token_v2.json
