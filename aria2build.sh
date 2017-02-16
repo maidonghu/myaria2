@@ -28,7 +28,7 @@ aria2c --conf-path=/usr/local/etc/aria2.conf
 
 apt install megatools -y
 
-apt install golang-go
+apt install golang-go -y
 export GOPATH=/root/gocode
 go get github.com/prasmussen/gdrive
 export PATH=$PATH:$GOPATH/bin
